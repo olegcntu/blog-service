@@ -5,6 +5,7 @@ const validateMongoDbId = require("../utils/validatemondodbid");
 const fs = require("fs");
 const {cloudinaryUploadImg} = require("../utils/cloudinary");
 
+
 const createBlog = asyncHandler(async (req, res) => {
     try {
         const newBlog = await Blog.create(req.body);
